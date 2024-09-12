@@ -7,8 +7,8 @@ import studio.hcmc.my_first_resume.module.domain.portfolio.PortfolioSkillVerbose
 import studio.hcmc.my_first_resume.module.id.portfolio.PortfolioId
 import studio.hcmc.my_first_resume.module.id.portfolio.PortfolioSkillId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 import studio.hcmc.my_first_resume.module.vo.user.UserVO
 
 @Serializable

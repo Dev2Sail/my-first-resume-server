@@ -1,15 +1,16 @@
 package studio.hcmc.my_first_resume.module.dto.portfolio
 
+import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.Serializable
-import studio.hcmc.my_first_resume.module.util.DataTransferObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.DataTransferObject
 
 sealed interface PortfolioDTO : DataTransferObject {
     @Serializable
     data class Post(
         val title: String,
-        val startDate: LocalDateTime,
-        val endDate: LocalDateTime,
+        val startDate: LocalDate?,
+        val endDate: LocalDate?,
         val isCollaboration: Boolean,
         val body: String
     ) : PortfolioDTO
@@ -17,8 +18,8 @@ sealed interface PortfolioDTO : DataTransferObject {
     @Serializable
     data class Put(
         val title: String,
-        val startDate: LocalDateTime,
-        val endDate: LocalDateTime,
+        val startDate: LocalDate?,
+        val endDate: LocalDate?,
         val isCollaboration: Boolean,
         val body: String
     ) : PortfolioDTO

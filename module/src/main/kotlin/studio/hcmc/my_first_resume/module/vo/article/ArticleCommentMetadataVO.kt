@@ -5,8 +5,8 @@ import kotlinx.serialization.Serializable
 import studio.hcmc.my_first_resume.module.domain.article.ArticleCommentMetadata
 import studio.hcmc.my_first_resume.module.domain.article.ArticleCommentMetadataVerbose
 import studio.hcmc.my_first_resume.module.id.article.ArticleCommentId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 
 @Serializable
 data class ArticleCommentMetadataVO(

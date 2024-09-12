@@ -3,3 +3,4 @@ plugins {
 }
 rootProject.name = "my-first-resume"
 include("module")
+include("exposed")

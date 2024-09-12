@@ -1,7 +1,8 @@
 package studio.hcmc.my_first_resume.module.dto.certificate
 
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
-import studio.hcmc.my_first_resume.module.util.DataTransferObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.DataTransferObject
 
 sealed interface CertificateDTO : DataTransferObject {
     @Serializable
@@ -9,7 +10,7 @@ sealed interface CertificateDTO : DataTransferObject {
         val title: String,
         val code: String,
         val organization: String,
-        val acquiredAt: String
+        val acquiredDate: LocalDate
     ) : CertificateDTO
 
     @Serializable
@@ -17,6 +18,6 @@ sealed interface CertificateDTO : DataTransferObject {
         val title: String,
         val code: String,
         val organization: String,
-        val acquiredAt: String
+        val acquiredDate: LocalDate
     ) : CertificateDTO
 }

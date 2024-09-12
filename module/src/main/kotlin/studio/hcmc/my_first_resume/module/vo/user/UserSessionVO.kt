@@ -6,8 +6,8 @@ import studio.hcmc.my_first_resume.module.domain.user.UserSession
 import studio.hcmc.my_first_resume.module.domain.user.UserSessionVerbose
 import studio.hcmc.my_first_resume.module.id.user.UserSessionId
 import studio.hcmc.my_first_resume.module.id.user.UserSignInId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 
 @Serializable
 data class UserSessionVO(

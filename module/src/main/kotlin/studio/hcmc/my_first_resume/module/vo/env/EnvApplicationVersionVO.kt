@@ -8,8 +8,8 @@ import studio.hcmc.my_first_resume.module.domain.env.EnvApplicationVersionVerbos
 import studio.hcmc.my_first_resume.module.domain.user.UserDomain
 import studio.hcmc.my_first_resume.module.id.env.EnvApplicationVersionId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 
 @Serializable
 data class EnvApplicationVersionVO(

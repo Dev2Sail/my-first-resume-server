@@ -3,7 +3,7 @@ package studio.hcmc.my_first_resume.module.dto.env
 import kotlinx.datetime.Instant
 import kotlinx.serialization.Serializable
 import studio.hcmc.my_first_resume.module.domain.env.EnvApplicationVersionDomain
-import studio.hcmc.my_first_resume.module.util.DataTransferObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.DataTransferObject
 
 sealed interface EnvApplicationVersionDTO : DataTransferObject {
     @Serializable

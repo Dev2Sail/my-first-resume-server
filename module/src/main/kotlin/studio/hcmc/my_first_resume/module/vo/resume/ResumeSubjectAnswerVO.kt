@@ -7,8 +7,8 @@ import studio.hcmc.my_first_resume.module.domain.resume.ResumeSubjectAnswerVerbo
 import studio.hcmc.my_first_resume.module.id.resume.ResumeId
 import studio.hcmc.my_first_resume.module.id.resume.ResumeSubjectAnswerId
 import studio.hcmc.my_first_resume.module.id.resume.ResumeSubjectId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 
 @Serializable
 data class ResumeSubjectAnswerVO(
@@ -24,7 +24,7 @@ data class ResumeSubjectAnswerVO(
     data class Verbose(
         override val id: ResumeSubjectAnswerId,
         override val resumeSubjectId: ResumeSubjectId,
-        override val subject: ResumeSubjectVO.Verbose,
+        override val resumeSubject: ResumeSubjectVO.Verbose,
         override val resumeId: ResumeId,
         override val resume: ResumeVO.Verbose,
         override val body: String,

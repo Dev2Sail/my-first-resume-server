@@ -4,7 +4,7 @@ import kotlinx.datetime.Instant
 import studio.hcmc.my_first_resume.module.domain.user.UserDomain
 import studio.hcmc.my_first_resume.module.id.memo.MemoSearchId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
 
 interface MemoSearchDomain<Id, UserId> : Creatable {
     val id: Id

@@ -1,12 +1,19 @@
 package studio.hcmc.my_first_resume.module.dto.user
 
 import kotlinx.serialization.Serializable
-import studio.hcmc.my_first_resume.module.util.DataTransferObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.DataTransferObject
 
 sealed interface UserDTO : DataTransferObject {
     @Serializable
     data class Post(
         val email: String,
+        val password: String,
+        val passwordSalt: String,
+        val nickname: String
+    ) : UserDTO
+
+    @Serializable
+    data class Put(
         val password: String,
         val passwordSalt: String,
         val nickname: String

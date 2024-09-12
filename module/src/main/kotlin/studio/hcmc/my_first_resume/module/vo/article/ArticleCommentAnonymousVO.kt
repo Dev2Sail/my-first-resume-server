@@ -7,8 +7,8 @@ import studio.hcmc.my_first_resume.module.domain.article.ArticleCommentAnonymous
 import studio.hcmc.my_first_resume.module.id.article.ArticleCommentAnonymousId
 import studio.hcmc.my_first_resume.module.id.article.ArticleId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 import studio.hcmc.my_first_resume.module.vo.user.UserVO
 
 @Serializable

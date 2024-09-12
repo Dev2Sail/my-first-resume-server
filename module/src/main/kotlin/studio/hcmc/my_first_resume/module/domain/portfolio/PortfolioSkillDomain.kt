@@ -5,8 +5,8 @@ import studio.hcmc.my_first_resume.module.domain.user.UserDomain
 import studio.hcmc.my_first_resume.module.id.portfolio.PortfolioId
 import studio.hcmc.my_first_resume.module.id.portfolio.PortfolioSkillId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.Concealable
-import studio.hcmc.my_first_resume.module.util.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Concealable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
 
 interface PortfolioSkillDomain<Id, PortfolioId, UserId> : Creatable, Concealable {
     val id: Id

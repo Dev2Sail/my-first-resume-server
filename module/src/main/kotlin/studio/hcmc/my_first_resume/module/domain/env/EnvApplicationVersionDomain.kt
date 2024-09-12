@@ -5,8 +5,8 @@ import kotlinx.serialization.Serializable
 import studio.hcmc.my_first_resume.module.domain.user.UserDomain
 import studio.hcmc.my_first_resume.module.id.env.EnvApplicationVersionId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.Creatable
-import studio.hcmc.my_first_resume.module.util.Modifiable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Modifiable
 
 interface EnvApplicationVersionDomain<Id, UserId> : Creatable, Modifiable {
     val id: Id

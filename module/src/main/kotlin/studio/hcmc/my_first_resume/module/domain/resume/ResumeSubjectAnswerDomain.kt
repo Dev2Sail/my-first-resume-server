@@ -4,9 +4,9 @@ import kotlinx.datetime.Instant
 import studio.hcmc.my_first_resume.module.id.resume.ResumeId
 import studio.hcmc.my_first_resume.module.id.resume.ResumeSubjectAnswerId
 import studio.hcmc.my_first_resume.module.id.resume.ResumeSubjectId
-import studio.hcmc.my_first_resume.module.util.Concealable
-import studio.hcmc.my_first_resume.module.util.Creatable
-import studio.hcmc.my_first_resume.module.util.Modifiable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Concealable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Modifiable
 
 interface ResumeSubjectAnswerDomain<Id, ResumeSubjectId, ResumeId> : Creatable, Modifiable, Concealable {
     val id: Id
@@ -20,7 +20,7 @@ interface ResumeSubjectAnswerDomain<Id, ResumeSubjectId, ResumeId> : Creatable, 
     interface Verbose<Id, ResumeSubjectId, ResumeId> : ResumeSubjectAnswerDomain<Id, ResumeSubjectId, ResumeId> {
         override val id: Id
         override val resumeSubjectId: ResumeSubjectId
-        val subject: ResumeSubjectDomain.Verbose<ResumeSubjectId, ResumeId, *>
+        val resumeSubject: ResumeSubjectDomain.Verbose<ResumeSubjectId, ResumeId, *>
         override val resumeId: ResumeId
         val resume: ResumeDomain<ResumeId, *>
         override val body: String

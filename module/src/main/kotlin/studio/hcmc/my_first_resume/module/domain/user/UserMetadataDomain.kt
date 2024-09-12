@@ -2,7 +2,7 @@ package studio.hcmc.my_first_resume.module.domain.user
 
 import kotlinx.datetime.Instant
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.Modifiable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Modifiable
 
 interface UserMetadataDomain<Id> : Modifiable {
     val id: Id

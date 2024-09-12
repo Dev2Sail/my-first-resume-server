@@ -6,8 +6,8 @@ import studio.hcmc.my_first_resume.module.domain.article.ArticleSearch
 import studio.hcmc.my_first_resume.module.domain.article.ArticleSearchVerbose
 import studio.hcmc.my_first_resume.module.id.article.ArticleSearchId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.ValueObject
-import studio.hcmc.my_first_resume.module.util.VerboseValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.ValueObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.VerboseValueObject
 import studio.hcmc.my_first_resume.module.vo.user.UserVO
 
 @Serializable

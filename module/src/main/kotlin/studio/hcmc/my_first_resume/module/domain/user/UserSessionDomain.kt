@@ -3,7 +3,7 @@ package studio.hcmc.my_first_resume.module.domain.user
 import kotlinx.datetime.Instant
 import studio.hcmc.my_first_resume.module.id.user.UserSessionId
 import studio.hcmc.my_first_resume.module.id.user.UserSignInId
-import studio.hcmc.my_first_resume.module.util.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
 
 interface UserSessionDomain<Id, UserSignInId> : Creatable {
     val id: Id

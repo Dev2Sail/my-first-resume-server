@@ -2,7 +2,7 @@ package studio.hcmc.my_first_resume.module.domain.user
 
 import kotlinx.datetime.Instant
 import studio.hcmc.my_first_resume.module.id.user.UserSaltRequestId
-import studio.hcmc.my_first_resume.module.util.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
 
 interface UserSaltRequestDomain<Id> : Creatable {
     val id: Id

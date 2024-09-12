@@ -4,7 +4,7 @@ import kotlinx.datetime.Instant
 import studio.hcmc.my_first_resume.module.domain.user.UserDomain
 import studio.hcmc.my_first_resume.module.id.resume.ResumeSearchId
 import studio.hcmc.my_first_resume.module.id.user.UserId
-import studio.hcmc.my_first_resume.module.util.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
 
 interface ResumeSearchDomain<Id, UserId> : Creatable {
     val id: Id
@@ -16,6 +16,7 @@ interface ResumeSearchDomain<Id, UserId> : Creatable {
         override val id: Id
         override val userId: UserId
         val user: UserDomain.Verbose<UserId>
+        override val body: String
         override val createdAt: Instant
     }
 }

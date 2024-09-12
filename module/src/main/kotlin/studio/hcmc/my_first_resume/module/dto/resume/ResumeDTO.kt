@@ -2,7 +2,7 @@ package studio.hcmc.my_first_resume.module.dto.resume
 
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.Serializable
-import studio.hcmc.my_first_resume.module.util.DataTransferObject
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.DataTransferObject
 
 sealed interface ResumeDTO : DataTransferObject {
     @Serializable

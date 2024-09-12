@@ -5,7 +5,7 @@ import studio.hcmc.my_first_resume.module.domain.env.EnvApplicationVersionDomain
 import studio.hcmc.my_first_resume.module.id.env.EnvApplicationVersionId
 import studio.hcmc.my_first_resume.module.id.user.UserId
 import studio.hcmc.my_first_resume.module.id.user.UserSignInId
-import studio.hcmc.my_first_resume.module.util.Creatable
+import studio.hcmc.my_first_resume.module.util.hcmc_extension.Creatable
 
 interface UserSignInDomain<Id, UserId, EnvApplicationVersionId> : Creatable {
     val id: Id
